@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drishti - Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(137, 4, 245);
+      color: aliceblue font-family: 'Lora', serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 90px;
+      background-color: white;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: rgb(137, 4, 245);
+    }
+
+    nav ul li a:hover {
+      color: pink;
+      font-size: 1.05rem;
+    }
+
+    .left { 
+      font-size: 1.9rem;
+      font-style: oblique;
+    }
+
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 80px 0;
+
+    }
+
+    .firstSection>div {
+      width: 40%;
+    }
+
+
+    .leftSection {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 35px;
+    }
+
+    .rightSection img {
+      width: 80%;
+    }
+
+    .purple {
+      color: #f6ed8f;
+    }
+
+    #element {
+      color: #f6ed8f;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .secondSection{
+      max-width: 80vw;
+      margin:0.4cm;
+      margin-bottom: 1cm;
+
+    
+    }
+    .thirdSection{
+      margin: 0px;
+      height: 3cm;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">DRISHTI'S PORTFOLIO</div>
+      <div class="right">
+        <ul>
+          <li style="color: blueviolet;"><a href="index.html">HOME</a></li>
+          <li style="color: blueviolet;"><a href="about.html">ABOUT</a></li>
+          <li style="color: blueviolet;"><a href="/">PROJECTS</a></li>
+          <li style="color: blueviolet;"><a href="cont.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        <h1 style="color: azure;">
+          Hi! I am <span class="purple"> Drishti </span>
+          <div> and I am a </div>
+        </h1>
+        <span id="element"></span>
+      </div>
+      <div class="rightSection">
+        <img src="coding.jpg" alt="" height="350px" width="500px">
+      </div>
+    </section>
+<hr>
+    <section class="secondSection">
+      <h1 style="color: azure;">Resume</h1>
+      <a href="resume.jpg">
+      <button > Click here to view Resume </button>
+      </a>
+    </section>
+  </main>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Full Stack Web Developer'],
+      typeSpeed: 50,
+    });
+  </script>
+  <section class="thirdSection">
+  <footer style="background-size: 70px; background-color:rgb(155, 68, 235) ; height: 122px ; ">
+    <a href="https://www.linkedin.com/in/drishti-kushwaha-17010b248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " style="color: yellow;"><img src="linkedin.jpg" alt="" width="20" height="20">LinkedIn</a>
+    <br>
+    <a href="https://Wa.me/+917024175551" style="color: yellow;"><img src="whatsapp.jpg" alt="" width="20" height="20">WhatsApp</a>
+    <div style="color:rgba(206, 235, 254, 0.941); font-size: 1.5rem ; text-align:center"> Portfolio Website of Drishti Kushwaha</div>
+    <div class="right"> portfoliowebdrishti | all rights reserved</div>
+  </footer>
+  </section>
+</body> 
+
+</html> 
